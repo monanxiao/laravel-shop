@@ -31,4 +31,10 @@ Route::group(['middleware' => ['auth', 'verified']], function() {
     // 收货地址数据入库
     Route::post('user_addresses', 'UserAddressesController@store')->name('user_addresses.store');
 
+    // 修改收货地址
+    Route::get('user_addresses/{user_address}', 'UserAddressesController@edit')->name('user_addresses.edit');
+
+    // 接受收货地址更新数据
+    Route::put('user_addresses/{user_address}', 'UserAddressesController@update')->name('user_addresses.update');
+
 });
