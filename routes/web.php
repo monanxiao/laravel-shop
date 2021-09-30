@@ -50,6 +50,8 @@ Route::group(['middleware' => ['auth', 'verified']], function() {
     // 取消收藏
     Route::delete('products/{product}/favorite', 'ProductsController@disfavor')->name('products.disfavor');
 
+    // 接收购物车参数
+    Route::post('cart', 'CartController@add')->name('cart.add');
 });
 
 // 首页
