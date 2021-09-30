@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     |
     */
-
+    'order_ttl' => 1800, // 订单延时任务执行时间
     'name' => env('APP_NAME', 'Laravel'),
 
     /*
