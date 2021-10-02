@@ -42,7 +42,6 @@
                 <button class="btn btn-success btn-favor">❤ 收藏</button>
             @endif
           <button class="btn btn-primary btn-add-to-cart">加入购物车</button>
-          <button class="btn btn-primary btn-add-to-cart">加入购物车</button>
         </div>
       </div>
     </div>

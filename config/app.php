@@ -13,6 +13,7 @@ return [
     |
     */
     'order_ttl' => 1800, // 订单延时任务执行时间
+    'ngrok_url' => env('NGROK_URL'),
     'name' => env('APP_NAME', 'Laravel'),
 
     /*
