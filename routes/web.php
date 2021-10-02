@@ -73,7 +73,13 @@ Route::group(['middleware' => ['auth', 'verified']], function() {
     Route::get('orders', 'OrdersController@index')->name('orders.index');
     // 订单详情页
     Route::get('orders/{order}', 'OrdersController@show')->name('orders.show');
+    // 支付订单
+    Route::get('payment/{order}/alipay', 'PaymentController@payByAlipay')->name('payment.alipay');
+    // 支付回调
+    Route::get('payment/alipay/return', 'PaymentController@alipayReturn')->name('payment.alipay.return');
 });
+// 支付回调
+Route::post('payment/alipay/notify', 'PaymentController@alipayNotify')->name('payment.alipay.notify');
 
 // 首页
 Route::redirect('/', '/products')->name('root');
