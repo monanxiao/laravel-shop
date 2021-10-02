@@ -12,7 +12,9 @@ return [
     ],
 
     'wechat' => [
-        'app_id'      => env('WECHAT_PAY_APP_ID'),
+        'appid'      => 'wx4f15363c47fffb7e',
+        'app_id'      => 'wx1bae3a7af1dfe980',
+        'miniapp_id' => 'wx4f15363c47fffb7e',
         'mch_id'      => env('WECHAT_PAY_MCH_ID'),
         'key'         => env('WECHAT_PAY_KEY'),
         'cert_client' => resource_path('wechat_pay/apiclient_cert.pem'),
