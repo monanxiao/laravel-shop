@@ -20,6 +20,16 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 Auth::routes(['verify' => true]);
 
+
+Route::get('alipay', function() {
+
+    return app('alipay')->web([
+        'out_trade_no' => time(),
+        'total_amount' => '1',
+        'subject' => 'test subject - 测试',
+    ]);
+});
+
  // 收藏列表
 Route::get('products/favorites', 'ProductsController@favorites')->name('products.favorites');
 
