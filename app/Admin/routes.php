@@ -25,5 +25,6 @@ Route::group([
     $router->get('products/{id}/edit', 'ProductsController@edit');
     // 接收编辑数据
     $router->put('products/{id}', 'ProductsController@update');
-
+    // 订单列表
+    $router->get('orders', 'OrdersController@index')->name('orders.index');
 });
