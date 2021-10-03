@@ -409,6 +409,10 @@ body {
     margin-top: 10px;
     padding-right: 10px;
   }
+  .payment-buttons, .receive-button, .refund-button {
+    margin-top: 10px;
+    padding-right: 10px;
+  }
 }
 
 .orders-review-show-page {
@@ -490,4 +494,5 @@ body {
   textarea {
     border-radius: 0px;
   }
+
 }
